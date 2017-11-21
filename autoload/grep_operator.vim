@@ -28,7 +28,7 @@ func! s:GrepOperator(type, needs_prompt) " {{{
     call s:Grep(pattern, filenames)
 
     " Open the quick fix window
-    copen
+    silent cwindow
     " Prevents the terminal from hiding characters
     " This appends sometimes when using external commands
     " See :help various.txt|528
